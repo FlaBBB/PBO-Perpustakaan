@@ -19,6 +19,10 @@ public class Kategori {
         
     }
 
+    public String toString() {
+        return this.nama;
+    }
+
     public Kategori(String nama, String keterangan) {
         this.nama = nama;
         this.keterangan = keterangan;
@@ -68,7 +72,7 @@ public class Kategori {
         return kat;
     }
     
-    public ArrayList<Kategori> getAll(){
+    public static ArrayList<Kategori> getAll(){
         ArrayList<Kategori> ListKategori = new ArrayList();
         
         ResultSet rs = DBHelper.selectQuery("SELECT * FROM kategori");
@@ -85,6 +89,21 @@ public class Kategori {
         }catch(Exception e){
             e.printStackTrace();
         }
+        return ListKategori;
+    }
+
+    public static ArrayList<String> getAllCategoryName() {
+        ArrayList<String> ListKategori = new ArrayList<>();
+        ResultSet rs = DBHelper.selectQuery("SELECT * FROM kategori");
+
+        try {
+            while (rs.next()) {
+                ListKategori.add(rs.getString("nama"));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         return ListKategori;
     }
     

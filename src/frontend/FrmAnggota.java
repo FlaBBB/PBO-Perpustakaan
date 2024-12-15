@@ -296,7 +296,8 @@ public class FrmAnggota extends javax.swing.JFrame {
     }//GEN-LAST:event_txtTeleponActionPerformed
 
     private void btnCariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCariActionPerformed
-        // TODO add your handling code here:
+        cari(txtCari.getText());
+        // tampilData();
     }//GEN-LAST:event_btnCariActionPerformed
 
     /**

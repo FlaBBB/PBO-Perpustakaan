@@ -67,7 +67,6 @@ public class Buku {
                                         " b.judul AS judul, " +
                                         " b.penerbit AS penerbit, " +
                                         " b.penulis AS penulis, " +
-                                        " b.pinjams AS pinjam, " +
                                         " k.idkategori AS idkategori, " +
                                         " k.nama AS nama, " +
                                         " k.keterangan AS keterangan " +
@@ -100,7 +99,6 @@ public ArrayList<Buku> getAll() {
                                         " b.judul AS judul, " +
                                         " b.penerbit AS penerbit, " +
                                         " b.penulis AS penulis, " +
-                                        " b.pinjams AS pinjam, " +
                                         " k.idkategori AS idkategori, " +
                                         " k.nama AS nama, " +
                                         " k.keterangan AS keterangan " +

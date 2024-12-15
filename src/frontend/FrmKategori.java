@@ -273,7 +273,7 @@ public class FrmKategori extends javax.swing.JFrame {
 
     private void btnCariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCariActionPerformed
         cari(txtCari.getText());
-        tampilData();
+        // tampilData();
     }//GEN-LAST:event_btnCariActionPerformed
 
     /**
